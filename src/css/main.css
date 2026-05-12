@@ -125,3 +125,85 @@ align-items: start;
     left: -4%;
 }
 }
+/* How to Play */
+.how-text{
+    display: none;
+}
+.how-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.how-img{
+    display: none;
+}
+.how-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.how-item{
+    border-radius: 20px;
+        padding: 12px;
+        width: 335px;
+        height: auto;
+background: #b4dff4;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+.how-item-title{
+font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #d871e6;
+}
+@media only screen and (min-width: 1440px) {
+.how-text{
+    display: block;
+    font-family: "Fredoka", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #2a2f3a;
+        margin-bottom: 12px;
+}
+.how-wrapper{
+    flex-direction: row-reverse;
+ justify-content: start;
+    gap: 236px;
+}
+.how-container{
+    padding-left: 190px;
+}
+.how-text-wrapper{
+position: relative;
+}
+.how-list{
+    align-items: start;
+}
+.how-item{
+    width: 414px;
+}
+.how-img{
+    display: block;
+    position: absolute;
+}
+.how-img-one{
+    top: 10%;
+    left: -10%;
+}
+.how-img-two{
+    top: 30%;
+    right: -10%;
+}
+.how-img-three{
+    bottom: 36%;
+        left: -10%;
+}
+.how-img-four{
+    bottom: 14%;
+    right: -10%;
+}
+}
