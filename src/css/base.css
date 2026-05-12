@@ -6,3 +6,30 @@ font-family: "Quicksand", sans-serif;
   line-height: 1.5;
   color: #2a2f3a;
 }
+h2{
+  font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+    color: #d871e6;
+text-shadow:
+    2px 0 0 #421467,
+    -2px 0 0 #421467,
+    0 2px 0 #421467,
+    0 -2px 0 #421467,
+    2px 2px 0 #421467,
+    -2px 2px 0 #421467,
+    2px -2px 0 #421467,
+    -2px -2px 0 #421467,
+    3px 0 0 #421467,
+    -3px 0 0 #421467,
+    0 3px 0 #421467,
+    0 -3px 0 #421467;
+    margin-bottom: 28px;
+}
+@media only screen and (min-width: 1440px) {
+  h2{
+    margin-bottom: 32px;
+  }
+}

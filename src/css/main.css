@@ -47,3 +47,81 @@ gap: 42px;
 margin-left: 50px;
 }
 }
+/* About the Game */
+.about-container-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-img{
+    display: none;
+}
+.about-wrapper{
+    border-radius: 20px;
+        padding: 26px 22px;
+        width: 335px;
+        height: 352px;
+background: #b4dff4;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.about-wrapper-two{
+border-radius: 20px;
+    width: 335px;
+    height: 298px;
+background: #b4dff4;
+position: relative;
+}
+.about-big-img{
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+.about-container{
+    padding-top: 80px;
+}
+@media only screen and (min-width: 1440px) {
+ .about-container-wrap{ 
+    width: 1064px;
+    margin-left: auto;
+margin-right: auto;
+flex-direction: row-reverse;
+gap: 0;
+position: relative;
+align-items: start;
+ }
+.about-container {
+    padding-top: 150px;
+}
+.about-wrapper{
+    padding: 26px 34px;
+        width: 532px;
+        height: 281px;
+}
+.about-wrapper-two{
+    width: 532px;
+        height: 298px;
+        margin-top: 100px;
+}
+.about-img{
+    display: block;
+    position: absolute;
+}
+.about-one{
+    top: 10%;
+    left: 43%;
+}
+.about-two{
+    top: 21%;
+    right: -4%;
+}
+.about-three{
+    bottom: 12%;
+    left: 50%;
+}
+.about-four{
+    bottom: 30%;
+    left: -4%;
+}
+}
