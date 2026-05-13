@@ -207,3 +207,47 @@ position: relative;
     right: -10%;
 }
 }
+/* Core Features */
+.features-section{
+    background-image: url("/img/features/mob.png");
+    background-repeat: no-repeat;
+    background-position: top 110px center;
+    background-size: 100% 192px;
+}
+.features-list{
+    margin-top: 220px;
+    border-radius: 20px;
+        padding: 22px 4px 22px 18px;
+        width: 335px;
+        height: 322px;
+        background: #b4dff4;
+        margin-left: auto;
+        margin-right: auto;
+display: flex;
+flex-direction: column;
+gap: 14px;        
+}
+.features-item{
+    display: flex;
+    align-items: start;
+gap: 4px;
+}
+@media only screen and (min-width: 1440px) {
+.features-section {
+        background-image: url("/img/features/desk.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+height: 738px;
+    }
+
+    .features-list {
+        margin-top: 100px;
+width: 472px;
+    height: 292px;
+        gap: 16px;
+        margin-right: 40px;
+
+    }
+
+}
