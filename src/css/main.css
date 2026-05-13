@@ -251,3 +251,22 @@ width: 472px;
     }
 
 }
+/* Visual Gallery */
+.btn{
+    display: none;
+}
+@media only screen and (min-width: 1440px) {
+.gallery-btn{
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+}
+}

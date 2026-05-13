@@ -1,0 +1,67 @@
+import Swiper from 'swiper';
+import { Navigation, Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+// =========================
+// GALLERY SWIPER
+// =========================
+const gallerySwiper = new Swiper('.gallery-swiper', {
+  modules: [Navigation, Autoplay],
+
+  loop: true,
+  speed: 600,
+
+  slidesPerView: 1.7,
+  spaceBetween: 16,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+  navigation: {
+    nextEl: '.gallery-next',
+    prevEl: '.gallery-prev',
+  },
+
+  breakpoints: {
+    1440: {
+      slidesPerView: 6,
+      spaceBetween: 24,
+    },
+  },
+});
+
+// =========================
+// REVIEWS SWIPER
+// =========================
+let reviewsSwiper = null;
+
+function initReviewsSwiper() {
+  if (window.innerWidth < 1440 && !reviewsSwiper) {
+    reviewsSwiper = new Swiper('.reviews-swiper', {
+      modules: [Autoplay],
+
+      loop: true,
+      speed: 800,
+
+      slidesPerView: 1,
+      spaceBetween: 16,
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  }
+
+  // destroy після 1440
+  if (window.innerWidth >= 1440 && reviewsSwiper) {
+    reviewsSwiper.destroy(true, true);
+    reviewsSwiper = null;
+  }
+}
+
+initReviewsSwiper();
+
+window.addEventListener('resize', initReviewsSwiper);
