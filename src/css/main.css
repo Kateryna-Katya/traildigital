@@ -373,3 +373,18 @@ padding: 12px 18px;
     width: 576px;
     }
 }
+/* Contact */
+.contact-container{
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-link{
+    margin-top: 18px;
+    font-family: "Fredoka", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #2a2f3a;
+}
